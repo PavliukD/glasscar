@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0;
-    padding-top: 50px;
+    background-color: #2A3489;
 }
 
 button {
@@ -48,4 +48,7 @@ a {
     text-decoration: none;
 }
 
+@import './sass/container';
+@import './sass/header';
+@import './sass/hero';
 
