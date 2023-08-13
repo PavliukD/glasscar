@@ -1,0 +1,77 @@
+.about--list-item{
+    
+    & h2{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #1A1A1D;
+        opacity: 0.4;
+    }
+
+    & img{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    & h3{
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+        margin-top: 14px;
+        color: #1A1A1D;
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        color: #1A1A1D;
+        margin-top: auto;
+        display: block;
+    }
+}
+
+.about--consultation-button{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    height: 40px;
+    align-items: center;
+    background-color: #2A3489;
+    border-radius: 200px;
+    border: none;
+    padding: 0 16px;
+    margin-top: 24px;
+
+    & svg{
+        display: block;
+        width: 16px;
+        height: 16px;
+        stroke: #FFF;
+    }
+
+    & span{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+        color: #FFF;
+    }
+}
+
+.about--list-item-text-wrap{
+    display: block;
+    height: 440px;
+    outline: 1px solid tomato;
+
+}

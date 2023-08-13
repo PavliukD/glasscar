@@ -131,34 +131,56 @@
     </ul>
 </header>
     <section class="hero">
-    <span class="hero--slider-pointer">
-        <span>01</span>
-        /
-        <span>03</span>
-    </span>
-    <ul class="hero--banner-text-list">
-        <li class="hero--banner-list-item">
-            <h2>Автомобільне
-            скло та сервіс</h2>
-            <ul>
-                <li>
-                    <p>При купівлі та встановленні скла AGC — знижка 10%</p>
-                </li>
-                <li>
-                    <p>Гарантія на роботу (клейовий шов) — безстрокова</p>
-                </li>
-            </ul>
-        </li>
-        <li class="hero--banner-list-item">
-            <h2>Тонування автоскла</h2>
-            <p>Професійне тонування автомобільного скла в Києві та обласі</p>
-        </li>
-        <li class="hero--banner-list-item">
-            <h2>Ремонт
-            автоскла</h2>
-            <p>Повне відновлення структурної міцності скла гарантує безпеку керування транспортним засобом.</p>
-        </li>
-    </ul>
+    <div class="container">
+        <span class="hero--slider-pointer">
+            <span class="hero--slider-pointer-current">01</span>
+            /
+            <span class="hero--slider-pointer-total">03</span>
+        </span>
+        <ul class="hero--banner-text-list">
+            <li class="hero--banner-list-item">
+                <h2>Автомобільне
+                    скло та сервіс</h2>
+                <ul class="hero--banner-mini-list">
+                    <li class="hero--banner-mini-list-item">
+                        <p>При купівлі та встановленні скла AGC — знижка 10%</p>
+                    </li>
+                    <li class="hero--banner-mini-list-item">
+                        <p>Гарантія на роботу (клейовий шов) — безстрокова</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="hero--banner-list-item hidden">
+                <h2>Тонування автоскла</h2>
+                <p>Професійне тонування автомобільного скла в Києві та обласі</p>
+            </li>
+            <li class="hero--banner-list-item hidden">
+                <h2>Ремонт
+                    автоскла</h2>
+                <p>Повне відновлення структурної міцності скла гарантує безпеку керування транспортним засобом.</p>
+            </li>
+        </ul>
+        <div class="hero--banner-buttons-wrap">
+            <button class="hero--banner-button-choose">
+                <span>Обрати</span>
+                <svg>
+                    <use href="images/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <div class="hero--banner-controls">
+                <button class="hero--banner-control-button left">
+                    <svg>
+                        <use href="images/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="hero--banner-control-button right">
+                    <svg>
+                        <use href="images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
     <ul class="hero--banner-images-list">
         <li>
             <img src="images/img-bg-1.png" alt="" class="hero--image">
@@ -171,6 +193,77 @@
         </li>
     </ul>
 
+</section>
+    <section class="about">
+    <ul class="about--list">
+        <li class="about--list-item">
+            <img src="images/about-1.png" alt="">
+            <div class="container about--list-item-text-wrap">
+                <h2>Про нас</h2>
+                <h3>Ми на ринку<br>
+                    10 років</h3>
+                <p>Це достатній термін, щоб не тільки заробити
+                хорошу репутацію, а й утримати її. Ми розширили список виробників і партнерів, коло клієнтів, проводимо постійне
+                навчання нашого кваліфікованого персоналу і утримуємо конкурентні ціни. Все для того, щоб нашим клієнтам не могла
+                і думка закрастися змінити станцію обслуговування. А нові клієнти, приходячи за порадою старих
+                або знаходячи нашу компанію самостійно, відразу
+                ж розуміли: ось, це вони, фахівці, яким я довірю свій автомобіль.</p>
+                <button class="about--consultation-button">
+                    <span>Консультація</span>
+                    <svg>
+                        <use href="images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="about--list-item">
+            <img src="images/about-2.png" alt="">
+            <div class="container about--list-item-text-wrap">
+                <h2>Про нас</h2>
+                <h3>Багатий<br>
+                    асортимент брендів</h3>
+                <p>У каталозі Ви побачите перелік представлених
+                на сайті та на складі автобрендів. І Вам не раз доведеться прокрутити сторінку каталогу, щоб побачити їх усі! Ми ставимо
+                оригінальне автоскло від економ класу до VIP, а також можемо підібрати добре збережене б/в автоскло за необхідності.</p>
+                <button class="about--consultation-button">
+                    <span>Консультація</span>
+                    <svg>
+                        <use href="images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="about--list-item">
+            <img src="images/about-3.png" alt="">
+            <div class="container about--list-item-text-wrap"></div>
+            <h2>Про нас</h2>
+            <h3>Додаткові<br>
+            послуги</h3>
+            <p>Ми усвідомлюємо, що конкуренція - це не тільки якість продукції та прийнятна ціна, а й якість сервісу. А тому прагнемо
+            розширити перелік послуг. Наприклад, Ви можете замовити полірування лобового скла, а також виїзд майстра за потрібною
+            адресою для заміни автоскла на місці.</p>
+            <button class="about--consultation-button">
+                <span>Консультація</span>
+                <svg>
+                    <use href="images/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="about--list-item">
+            <img src="images/about-4.png" alt="">
+            <div class="container about--list-item-text-wrap"></div>
+            <h2>Про нас</h2>
+            <h3>Професійне консультування</h3>
+            <p>Яке вибрати скло? Коли можливий ремонт, а коли необхідна заміна? Як доглядати за лобовими, бічними, кузовними і задніми
+            стеклами?Запитуйте! Чесна консультація - гарантія раціональної витрати ваших коштів.</p>
+            <button class="about--consultation-button">
+                <span>Консультація</span>
+                <svg>
+                    <use href="images/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
 </section>
 </body>
 </html>

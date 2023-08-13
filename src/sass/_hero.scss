@@ -1,5 +1,6 @@
 .hero{
     padding-top: 150px;
+    background-color: #2A3489;
 }
 
 .hero--image{
@@ -12,10 +13,139 @@
 .hero--banner-images-list{
     width: 100%;
     display: flex;
-    
+    margin-top: 24px;
     overflow: hidden;
 
     & > li{
         flex-shrink: 0;
+    }
+}
+
+.hero--slider-pointer{
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FFF;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.hero--slider-pointer-current{
+    font-weight: 800;
+}
+
+.hero--banner-text-list{
+    height: 170px;
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.hero--banner-list-item{
+
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.hidden{
+        opacity: 0;
+    }
+
+    & > h2{
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+        color: #FFF;
+        width: 90%;
+        margin-bottom: 42px;
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #FFF;
+        width: 90%;
+    }
+}
+
+.hero--banner-mini-list-item{
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: #FFF;
+        margin-right: 8px;
+    }
+}
+
+.hero--banner-control-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 200px;
+    background-color: transparent;
+    border: 1.4px solid #FFF;
+
+    & > svg{
+        display: block;
+        width: 16px;
+        height: 16px;
+        stroke: #FFF;
+    }
+}
+
+.hero--banner-controls{
+    display: flex;
+    gap: 8px;
+}
+
+.hero--banner-buttons-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero--banner-button-choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 140px;
+    gap: 4px;
+    border-radius: 200px;
+    border: none;
+    background-color: #FFF;
+
+    & > span{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+        color: #2A3489;
+    }
+
+    & > svg{
+        display: block;
+        width: 16px;
+        height: 16px;
+        stroke: #2A3489;
     }
 }
