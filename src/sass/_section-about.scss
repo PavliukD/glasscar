@@ -1,4 +1,8 @@
 .about--list-item{
+
+    &:not(:first-child){
+        margin-top: 40px;
+    }
     
     & h2{
         font-family: Manrope;
@@ -70,8 +74,8 @@
 }
 
 .about--list-item-text-wrap{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 440px;
-    outline: 1px solid tomato;
-
 }
