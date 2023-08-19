@@ -13,7 +13,6 @@ export default function Steps() {
 
     items.forEach(item => {
         const text = item.querySelector('p')
-        console.dir(text.scrollHeight)
         item.addEventListener('click', () => {
             items.forEach(itm => {
                 itm.classList.remove('active')

@@ -1,0 +1,124 @@
+.questions{
+    // background-color: #FFF;
+
+    & h2{
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+        color: #1A1A1D;
+    }
+
+    & >.container{
+        margin-top: 40px;
+
+        & >img {
+            display: block;
+            width: 100%;
+            height: 640px;
+            object-fit: cover;
+        }
+        
+        & >button {
+            display: flex;
+            height: 40px;
+            padding: 0px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 200px;
+            background-color: #2A3489;
+            border: none;
+            margin-top: 40px;
+    
+            &>svg {
+                width: 16px;
+                height: 16px;
+                stroke: #FFF;
+            }
+    
+            &>span {
+                font-family: Manrope;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 16px;
+                color: #FFF;
+            }
+        }
+
+        & > ul{
+            margin-top: 80px;
+
+            & > li{
+                padding-bottom: 16px;
+                border-bottom: 1px solid #1A1A1D;
+
+                &.active{
+                    & > span{
+                        background-color: #1A1A1D;
+                        color: #F6F6F3;
+                    }
+
+                    & > p{
+                        margin-top: 16px;
+                    }
+                }
+
+                &:not(:first-child){
+                    margin-top: 16px;
+                }
+
+                & > span{
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: #1A1A1D;
+                    text-align: center;
+                    height: 17px;
+                    padding: 0px 16px;
+                    border-radius: 200px;
+                    border: 1px solid #1A1A1D;
+                    background-color: transparent;
+
+                    transition-property: background-color, color;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+                }
+
+                & > h3{
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 16px;
+                    letter-spacing: -0.48px;
+                    text-transform: uppercase;
+                    color: #1A1A1D;
+                    margin-top: 16px;
+                }
+
+                & > p{
+                    font-family: Manrope;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                    color: #1A1A1D;
+                    margin-top: 0;
+                    height: 0px;
+                    overflow: hidden;
+
+                    transition-property: margin-top, height;
+                    transition-duration: 500ms;
+                    transition-delay: 0;
+                }
+            }
+        }
+    }
+}
