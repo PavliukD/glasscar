@@ -1,0 +1,144 @@
+footer{
+    background-color: #2A3489;
+    
+    & >.container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    & h3{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 22px;
+        opacity: 0.4;
+        color: #FFF;
+        margin-bottom: 16px;
+    }
+
+    & p{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        color: #FFF;
+    }
+}
+
+.footer-nav{
+
+    & > li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:first-child){
+            margin-top: 4px;
+        }
+    }
+
+    & svg{
+        width: 16px;
+        height: 16px;
+        stroke: #FFF;
+    }
+
+    & a{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        color: #FFF;
+    }
+}
+
+.suffix{
+    width: 32px;
+    height: 32px;
+    opacity: 0.4;
+    fill: #FFF;
+}
+
+.footer-not{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer-nav-wrap{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.footer-adress-wrap{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & a{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        opacity: 0.4;
+        margin-top: 16px;
+    }
+    
+    & svg {
+            width: 16px;
+            height: 16px;
+            stroke: #FFF;
+            margin-left: 6px;
+        }
+}
+
+.footer-socials-wrap{
+    & li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &:not(:first-child) {
+            margin-top: 4px;
+        }
+    }
+
+    & svg {
+            width: 16px;
+            height: 16px;
+            stroke: #FFF;
+        }
+    
+    & a {
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        color: #FFF;
+    }
+}
+
+.footer-payment-wrap{
+
+    & svg{
+        width: 37px;
+        height: 24px;
+        fill: #FFF;
+        stroke: #FFF;
+    }
+
+    & ul{
+        display: flex;
+        align-items: center;
+    }
+}
