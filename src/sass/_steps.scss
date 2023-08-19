@@ -1,0 +1,56 @@
+.steps{
+    
+    & > ul{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #FFFFFF;
+
+        & >li{
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(26, 26, 29, 0.3);
+
+            &:not(:first-child){
+                margin-top: 16px;
+            }
+
+            &.active{
+                & > h3{
+                    color: #2A3489;
+                }
+                & > p {
+                    margin-top: 16px;
+                }
+            }
+
+            & > h3{
+                font-family: Roboto Condensed;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: -1.44px;
+                text-transform: uppercase;
+                color: #1A1A1D;
+
+                transition-property: color;
+                transition-duration: 500ms;
+                transition-delay: 0;
+            }
+
+            & > p{
+                font-family: Manrope;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px;
+                color: #1A1A1D;
+                height: 0;
+                overflow: hidden;
+
+                transition-property: margin, height;
+                transition-duration: 500ms;
+                transition-delay: 0;
+            }
+        }
+    }
+}

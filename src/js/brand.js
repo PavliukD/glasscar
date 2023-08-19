@@ -3,13 +3,12 @@ export default function Brands() {
     const cathegoriesList = document.querySelector('.segment--cathegories-list')
     const cathegories = cathegoriesList.querySelectorAll('li')
     const massive = [...cathegories]
-    console.log(massive)
 
     const bannersLists = base.querySelectorAll('.segment--brands-list')
+    const topLists = base.querySelectorAll('.segment--top-four-list')
     
 
     const banner = document.querySelector('.segment--brand')
-    console.dir(banner.style.backgroundImage)
 
     let counter = 0
     let cathNumber = 0
@@ -27,11 +26,14 @@ export default function Brands() {
                 banner.style.backgroundImage = `url('${imagesList[0]}')`
             })
     
+    let intervalID = setInterval(ChangeImg, 3000)
+    
     cathegories.forEach(cathegory => {
         cathegory.addEventListener('click', () => {
             cathegories.forEach(cath => {
                 cath.classList.remove('active')
             })
+            clearInterval(intervalID)
             cathegory.classList.add('active')
             cathNumber = massive.indexOf(cathegory)
             bannersLists.forEach(bannerList => {
@@ -44,12 +46,22 @@ export default function Brands() {
                 banner.style.backgroundImage = `url('${imagesList[0]}')`
                 counter = 0
             })
+            topLists.forEach(list => {
+                if (list.dataset.class !== cathegory.dataset.class) {
+                    list.classList.remove('active')
+                    return
+                }
+                list.classList.add('active')
+            })
+            intervalID = setInterval(ChangeImg, 3000)
         })
     })
 
     
 
-    setInterval(() => {
+    
+
+    function ChangeImg() {
         if (counter === imagesList.length - 1) {
             counter = 0
             banner.style.backgroundImage = `url('${imagesList[counter]}')`
@@ -57,5 +69,5 @@ export default function Brands() {
         }
         counter++
         banner.style.backgroundImage = `url('${imagesList[counter]}')`
-    }, 3000)
+    }
 }

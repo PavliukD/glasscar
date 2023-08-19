@@ -2,6 +2,7 @@
     background-color: #2A3489;
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-top: 80px;
 
     & > h2{
         font-family: Manrope;
@@ -11,6 +12,7 @@
         line-height: 22px;
         color: #fff;
         opacity: 0.6;
+        margin-bottom: 16px;
     }
 
     & h3{
@@ -22,15 +24,10 @@
         letter-spacing: -1.92px;
         text-transform: uppercase;
         color: #fff;
-        opacity: 0.2;
-
-        
+        opacity: 0.2;       
     }
-}
 
-.segment--top{
-
-    & > h4{
+    & h4 {
         font-family: Manrope;
         font-size: 14px;
         font-style: normal;
@@ -40,6 +37,33 @@
         opacity: 0.6;
     }
 
+    & button{
+        display: flex;
+        height: 40px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-radius: 200px;
+        background: #fff;
+        border: none;
+        margin-top: 40px;
+
+        & > svg{
+            width: 16px;
+            height: 16px;
+            stroke: #2A3489;
+        }
+
+        & > span{
+            font-family: Manrope;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 16px;
+            color: #2A3489;
+        }
+    }
 }
 
 .segment--manufacturer{
@@ -69,12 +93,20 @@
 
 .segment--top-four-list{
     margin-top: 24px;
+    display: none;
+
+    &.active{
+        display: block;
+    }
 
     & > li{
         display: flex;
         align-items: center;
         justify-content: space-between;
         
+        &:not(:first-child){
+            margin-top: 8px;
+        }
     }
 }
 
@@ -87,10 +119,11 @@
     width: 100%;
     padding-top: 32%;
     padding-bottom: 32%;
-    outline: 1px solid tomato;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     transition-property: background-image;
     transition-duration: 1000ms;
@@ -98,6 +131,8 @@
 }
 
 .segment--cathegories-list{
+
+
     & > li{
         &.active{
             & > h3{
