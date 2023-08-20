@@ -4,7 +4,6 @@ export default function Seo() {
     const button = base.querySelector('.seo-button')
     const height = list.clientHeight
 
-    console.dir(list)
 
     button.addEventListener('click', () => {
         const inserts = button.querySelectorAll('div')

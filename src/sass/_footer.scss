@@ -1,5 +1,8 @@
 footer{
     background-color: #2A3489;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin-top: 40px;
     
     & >.container{
         display: grid;
@@ -66,6 +69,31 @@ footer{
 .footer-not{
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+
+    & >div{
+        display: flex;
+        justify-content: space-between;
+
+        & > p{
+            width: 73%;
+        }
+    }
+
+    & > a{
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+        color: #FFF;
+        margin: auto;
+        display: inline-block;
+        margin-top: 80px;
+    }
 }
 
 .footer-nav-wrap{
@@ -133,12 +161,27 @@ footer{
     & svg{
         width: 37px;
         height: 24px;
-        fill: #FFF;
-        stroke: #FFF;
+
     }
 
     & ul{
         display: flex;
         align-items: center;
+        gap: 8px;
+    }
+}
+
+.footer-meta{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+
+    & svg{
+        width: 100%;
+        height: auto;
+    }
+
+    & p{
+        width: 130px;
     }
 }

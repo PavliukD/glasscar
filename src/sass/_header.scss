@@ -5,12 +5,14 @@ header{
     padding-bottom: 24px;
     position: absolute;
     top: 0;
-}
+    background-color: #2A3489;
 
-.header--menu{
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 0;
 
-    &.hidden{
-        display: none;
+    &.on{
+        background-color: black;
     }
 }
 
@@ -83,5 +85,10 @@ header{
         display: block;
         width: 24px;
         height: 24px;
+
+        &.cross{
+            stroke: black;
+        }
+
     }
 }

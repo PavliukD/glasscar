@@ -1,0 +1,110 @@
+.menu{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 88px;
+    left: 0;
+    overflow: hidden;
+
+    transition-property: height;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &.hidden{
+        height: 0;
+    }
+
+    & >.container{
+        padding-top: 50px;
+
+        &>nav {
+                &>ul {
+                    &>li {
+                        &:not(:first-child){
+                            margin-top: 12px;
+                        }
+
+                        &>a {
+        
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            opacity: 0.4;
+        
+                            & span {
+                                font-family: Roboto Condensed;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: -0.72px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                            }
+        
+                            & svg {
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+
+.menu-sertificats{
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    & > span{
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    & > svg{
+        width: 16px;
+        height: 16px;
+
+    }
+}
+
+.menu-buttons{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+
+    & button{
+        width: 100%;
+        border-radius: 200px;
+        border: 1.4px solid #FFF;
+        height: 40px;
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+
+        &.menu-install{
+            background-color: #FFF;
+            color: #1A1A1D;
+        }
+
+        &.menu-repair{
+            background-color: transparent;
+            color: #FFF;
+        }
+    }
+}
