@@ -22,6 +22,44 @@
         line-height: 16px;
         color: #1A1A1D;
         opacity: 0.4;
+        margin-top: 16px;
+    }
+
+    & form{
+        margin-top: 8px;
+
+        & input{
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(26, 26, 29, 0.40);
+            padding: 6px 0px;
+
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+            color: #1A1A1D;
+
+            &:not(:first-child){
+                margin-top: 16px;
+            }
+
+            &::placeholder{
+                font-family: Roboto Condensed;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: -0.72px;
+                text-transform: uppercase;
+                color: #1A1A1D;
+                opacity: 0.4;
+            }
+        }
     }
 }
 
@@ -84,5 +122,67 @@
 
     &>.current{
         font-weight: 800;
+    }
+}
+
+.calculator-drop-menu{
+    background-color: #F6F6F3;
+    max-height: 240px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #2A3489;
+    }
+
+    & >li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        padding: 0px 16px 0px 8px;
+        border-bottom: 1px solid rgba(26, 26, 29, 0.10);
+
+        &.hidden{
+            display: none;
+        }
+
+        & > svg{
+            width: 24px;
+            height: 24px;
+            stroke: #1A1A1D;
+            opacity: 0.4;
+        }
+
+        & > span{
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+            opacity: 0.4;
+        }
+    }
+}
+
+.calculator--input-wrap{
+    position: relative;
+    
+
+    & > svg{
+        width: 16px;
+        height: 16px;
+        stroke: #1A1A1D;
+        fill: none;
+        opacity: 0.4;
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(20%);
     }
 }
