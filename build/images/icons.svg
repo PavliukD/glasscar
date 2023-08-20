@@ -4,13 +4,13 @@
 <path stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="4" d="M25.334 12l-9.333 8-9.333-8"></path>
 </symbol>
 <symbol id="arrow-left" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3" d="M20 25.333l-8-9.333 8-9.333"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3" d="M20 25.333l-8-9.333 8-9.333"></path>
 </symbol>
 <symbol id="arrow-right" viewBox="0 0 32 32">
 <path fill="none" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3" d="M12 6.667l8 9.333-8 9.333"></path>
 </symbol>
 <symbol id="arrow-up" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2" d="M6.667 20l9.333-8 9.333 8"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2" d="M6.667 20l9.333-8 9.333 8"></path>
 </symbol>
 <symbol id="cross-1" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="1.0435" d="M16.359 8.13v8.228M16.359 24.587v-8.228M16.359 16.358h8.229M16.359 16.358h-8.228"></path>

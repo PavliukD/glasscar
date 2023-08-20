@@ -7,6 +7,7 @@ import Questions from './js/questions'
 import Seo from './js/seo'
 import Menu from './js/menu'
 import Options from './js/options'
+import MoreOptions from './js/more-options'
 
 Brands()
 Steps()
@@ -14,3 +15,4 @@ Questions()
 Seo()
 Menu()
 Options()
+MoreOptions()

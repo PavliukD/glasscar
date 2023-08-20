@@ -1,0 +1,46 @@
+.calculator{
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.calculator-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > button{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        
+
+        &.left{
+            border: 1.4px solid #1A1A1D;
+            background-color: transparent;
+            opacity: 0.2;
+
+            & > svg{
+                stroke: #1A1A1D;
+            }
+        }
+
+        &.right{
+            border: 1.4px solid #2A3489;
+            background-color: #2A3489;
+
+            & > svg {
+                stroke: #FFF;
+            }
+        }
+
+        & > svg{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
