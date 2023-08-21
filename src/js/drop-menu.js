@@ -5,20 +5,37 @@ export default function DropMenu() {
         const input = wrap.querySelector('input')
         const menu = wrap.querySelector('.calculator-drop-menu')
         const items = menu.querySelectorAll('li')
-        input.addEventListener('input', (e) => {
+        const inputWrap = wrap.querySelector('.calculator--input-wrap')
+        const notification = inputWrap.querySelector('.results')
+        const initText = notification.innerText
+        const error = inputWrap.querySelector('.error')
+
+        input.addEventListener('input', () => {
+            
             items.forEach(item => {
                 const txt = item.querySelector('span')
                 const text = txt.innerText
                 const checkText = text.substring(0, input.value.length)
                 const outerText = text.substring(input.value.length, text.length)
-                console.log(outerText)
+                
                 if (input.value.toLowerCase() === checkText.toLowerCase()) {
                     item.classList.remove('hidden')
-                    
+                    item.classList.add('count')
+                    txt.innerHTML = `<mark>${checkText}</mark>${outerText}`
+                    if (input.value.length === 0) {
+                        item.classList.remove('count')
+                        return
+                    }
+                    item.classList.add('count')
                     return
                 }
                 item.classList.add('hidden')
+                item.classList.remove('count')
             })
+
+            const counterList = menu.querySelectorAll('.count')
+
+            SearchNotification(counterList.length, notification, initText)
         })
 
         items.forEach(item => {
@@ -32,4 +49,13 @@ export default function DropMenu() {
             })
         })
     })
+}
+
+function SearchNotification(length, notification, init) {
+    if (length === 0) {
+        notification.classList.add('hidden')
+        return
+    }
+    notification.classList.remove('hidden')
+    notification.innerText = `${length} ${init}`
 }

@@ -59,6 +59,13 @@
                 color: #1A1A1D;
                 opacity: 0.4;
             }
+
+            &.error {
+                color: #F92C2C;
+                border-color: #F92C2C;
+            }
+
+
         }
     }
 }
@@ -190,7 +197,13 @@
             line-height: 24px; /* 100% */
             letter-spacing: -0.72px;
             text-transform: uppercase;
-            opacity: 0.4;
+            // opacity: 0.4;
+            color: rgba(26, 26, 29, 0.40);
+
+            & > mark {
+                background-color: #2A3489;
+                color: #FFF;
+            }
         }
     }
 }
@@ -208,6 +221,36 @@
         position: absolute;
         right: 0;
         bottom: 50%;
-        transform: translateY(20%);
+        transform: translateY(40%);
+
+        &.hidden{
+            display: none;
+        }
+    }
+
+    & > span{
+
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+
+        &.results{
+            color: rgba(26, 26, 29, 0.20);
+        }
+
+        &.error{
+            color: #F92C2C;
+        }
+
+        &.hidden{
+            display: none;
+        }
     }
 }
+
