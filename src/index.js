@@ -8,6 +8,7 @@ import Seo from './js/seo'
 import Menu from './js/menu'
 import Options from './js/options'
 import MoreOptions from './js/more-options'
+import DropMenu from './js/drop-menu'
 
 Brands()
 Steps()
@@ -16,3 +17,4 @@ Seo()
 Menu()
 Options()
 MoreOptions()
+DropMenu()

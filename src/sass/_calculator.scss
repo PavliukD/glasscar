@@ -125,10 +125,22 @@
     }
 }
 
+.calculator--drop-menu-wrap{
+    position: relative;
+}
+
 .calculator-drop-menu{
-    background-color: #F6F6F3;
+    
     max-height: 240px;
-    overflow: scroll;
+    overflow: auto;
+    height: fit-content;
+    min-height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: 4;
+    width: 100%;
 
     &::-webkit-scrollbar {
         width: 6px;
@@ -145,6 +157,19 @@
         height: 40px;
         padding: 0px 16px 0px 8px;
         border-bottom: 1px solid rgba(26, 26, 29, 0.10);
+        background-color: #F6F6F3;
+
+        &:hover{
+            background-color: #FFF;
+
+            & > svg{
+                opacity: 1;
+            }
+
+            & > span{
+                opacity: 1;
+            }
+        }
 
         &.hidden{
             display: none;
