@@ -1,6 +1,14 @@
+@import './container';
+
 .hero{
     padding-top: 150px;
     background-color: #2A3489;
+
+    & > .container{
+        @media (min-width: 768px) {
+            position: relative;
+        }
+    }
 }
 
 .hero--image{
@@ -8,6 +16,10 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
+
+    @media (min-width: 768px) {
+        height: auto;
+    }
 }
 
 .hero--banner-images-list{
@@ -15,6 +27,11 @@
     display: flex;
     margin-top: 24px;
     overflow: hidden;
+
+    @media (min-width: 768px) {
+        max-width: 1440px;
+        margin: auto;
+    }
 
     & > li{
         flex-shrink: 0;
@@ -49,6 +66,11 @@
     top: 0;
     left: 0;
 
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+    }
+
     &.hidden{
         opacity: 0;
     }
@@ -64,6 +86,16 @@
         color: #FFF;
         width: 90%;
         margin-bottom: 42px;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 81px;
+            letter-spacing: -2.88px;
+            text-transform: uppercase;
+        }
     }
 
     & p{
@@ -74,12 +106,28 @@
         line-height: 16px;
         color: #FFF;
         width: 90%;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
     }
+}
+
+.hero--banner-mini-list{
+    justify-self: right;
+    width: 100%;
+    max-width: 434px;
 }
 
 .hero--banner-mini-list-item{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+
 
     &::before {
         content: '';
@@ -89,6 +137,12 @@
         border-radius: 100%;
         background-color: #FFF;
         margin-right: 8px;
+        margin-top: 5px;
+
+        @media (min-width: 768px) {
+            margin-top: 8px;
+            margin-right: 4px;
+        }
     }
 }
 
@@ -102,11 +156,32 @@
     background-color: transparent;
     border: 1.4px solid #FFF;
 
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    @media (min-width: 768px) {
+        height: 48px;
+        padding: 0 24px;
+
+        &:hover{
+            background-color: #FFF;
+
+            & > svg{
+                stroke: #2A3489;
+            }
+        }
+    }
+
     & > svg{
         display: block;
         width: 16px;
         height: 16px;
         stroke: #FFF;
+
+        transition-property: stroke;
+        transition-duration: 500ms;
+        transition-delay: 0;
     }
 }
 
@@ -120,6 +195,14 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (min-width: 768px) {
+        justify-content: flex-end;
+        gap: 142px;
+        position: absolute;
+        bottom: 0;
+        right: 82px;
+    }
+
 }
 
 .hero--banner-button-choose{
@@ -132,6 +215,44 @@
     border-radius: 200px;
     border: none;
     background-color: #FFF;
+    border: 1.4px solid #FFF;
+
+    @media (min-width: 768px) {
+        padding: 0 24px;
+        height: 48px;
+    }
+
+    &>span {
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+
+    &>svg { 
+        transition-property: stroke;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+
+    &:hover{
+        background-color: transparent;
+        
+        & > span{
+            color: #FFF;
+
+            transition-property: color;
+            transition-duration: 500ms;
+            transition-delay: 0;
+        }
+
+        & > svg{
+            stroke: #FFF;
+
+            transition-property: stroke;
+            transition-duration: 500ms;
+            transition-delay: 0;
+        }
+    }
 
     & > span{
         font-family: Manrope;
@@ -140,6 +261,31 @@
         font-weight: 800;
         line-height: 16px;
         color: #2A3489;
+
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &.mobile{
+            display: inline-block;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        &.desctop{
+            display: none;
+
+            @media (min-width: 768px) {
+                display: inline-block;
+                font-family: Manrope;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+            }
+        }
     }
 
     & > svg{
@@ -147,5 +293,9 @@
         width: 16px;
         height: 16px;
         stroke: #2A3489;
+
+        transition-property: stroke;
+        transition-duration: 500ms;
+        transition-delay: 0;
     }
 }

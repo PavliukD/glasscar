@@ -68,6 +68,23 @@
 
         }
     }
+
+    & > .container{
+        & > ul{
+            & > li{
+                & > .popup-options {
+                        margin-top: 16px;
+                        width: 100%;
+                        overflow: scroll;
+
+                        &>.option {
+                            flex-shrink: 0;
+                            max-width: 168px;
+                        }
+                    }
+            }
+        }
+    }
 }
 
 .calculator-pagination{
@@ -253,4 +270,6 @@
         }
     }
 }
+
+
 
