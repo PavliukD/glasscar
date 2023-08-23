@@ -31,13 +31,23 @@
         & > li{
             &:not(:first-child){
                 margin-top: 40px;
+
+                @media (min-width: 768px) {
+                    margin-top: 100px;
+                }
             }
 
             & > ul{
                 margin-bottom: 16px;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 42px;
+                }
+                
                 & > li{
                     display: flex;
                     align-items: flex-start;
+
                     &:before{
                         content: '';
                         width: 4px;
@@ -47,6 +57,12 @@
                         margin-top: 5px;
                         margin-right: 4px;
                         flex-shrink: 0;
+
+                        @media (min-width: 768px) {
+                            width: 7px;
+                            height: 7px;
+                            margin-top: 7px;
+                        }
                     }
 
                     &:not(:first-child){
@@ -71,6 +87,16 @@
         text-transform: uppercase;
         color: #1A1A1D;
         margin-bottom: 24px;
+
+        @media (min-width: 768px) {
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px; /* 116.667% */
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+        }
     }
 
     & h4{
@@ -81,6 +107,14 @@
         line-height: 16px;
         color: #1A1A1D;
         margin-bottom: 16px;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 22px;
+        }
     }
 
     & p{
@@ -90,6 +124,14 @@
         font-weight: 400;
         line-height: 16px;
         color: #1A1A1D;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
 
         &:not(:last-child){
             margin-bottom: 16px;
@@ -104,6 +146,10 @@
         border: none;
         margin-top: 16px;
         justify-content: space-between;
+
+        @media (min-width: 768px) {
+            width: 196px;
+        }
 
         & div{
             display: none;
@@ -132,6 +178,14 @@
             font-weight: 600;
             line-height: 22px;
             color: #1A1A1D;
+
+            @media (min-width: 768px) {
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+            }
         }
     }
 }

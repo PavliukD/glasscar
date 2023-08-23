@@ -10,6 +10,9 @@ import Options from './js/options'
 import MoreOptions from './js/more-options'
 import DropMenu from './js/drop-menu'
 import HorisontalScroll from './js/HorisontalScroll'
+import ScrollWhy from './js/scroll-why'
+import Hero from './js/hero'
+import Language from './js/language'
 
 Brands()
 Steps()
@@ -20,3 +23,6 @@ Options()
 MoreOptions()
 DropMenu()
 HorisontalScroll()
+ScrollWhy()
+Hero()
+Language()

@@ -4,10 +4,6 @@
     padding-bottom: 80px;
     margin-top: 80px;
 
-    & > *{
-        outline: 1px solid green;
-    }
-
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

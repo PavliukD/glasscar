@@ -194,7 +194,7 @@
         </li>
     </ul>
 </section>
-    <section class="why">
+    <section class="why scroll">
     <img src="images/why.png" alt="" class="why--image">
     <div class="why--title-wrap container">
         <h2>Чому ми?</h2>
@@ -868,13 +868,17 @@
                 <h3>Графік роботи:</h3>
                 <p>Понеділок - п’ятниця
                     09:00 - 19:00
+                    </p>
+                <p>
                     Субота - Неділя
-                    Вихідні</p>
+                    Вихідні
+                </p>
             </div>
             <div>
                 <h3>Адреса:</h3>
                 <p>Україна, Київ
-                    вул. Бориспільська 44</p>
+                    </p>
+                <p>вул. Бориспільська 44</p>
                 <a href="">
                     Прокласти маршрут
                     <svg>
@@ -883,52 +887,58 @@
                 </a>
             </div>
         </div>
-        <div class="footer-socials-wrap">
-            <h3>Ми у мережі:</h3>
-            <ul>
-                <li>
-                    <a href="">Instagram</a>
-                    <svg>
-                        <use href="images/icons.svg#arrow-right"></use>
-                    </svg>
-                </li>
-                <li>
-                    <a href="">Facebook</a>
-                    <svg>
-                        <use href="images/icons.svg#arrow-right"></use>
-                    </svg>
-                </li>
-                <li>
-                    <a href="">Tik-Tok</a>
-                    <svg>
-                        <use href="images/icons.svg#arrow-right"></use>
-                    </svg>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-payment-wrap">
-            <h3>Розрахунок:</h3>
-            <ul>
-                <li>
-                    <a href="">
+        <div class="footer-socials-payment">
+            <div class="footer-socials-wrap">
+                <h3>Ми у мережі:</h3>
+                <ul>
+                    <li>
+                        <a href="">Instagram</a>
                         <svg>
-                            <use href="images/icons.svg#visa"></use>
+                            <use href="images/icons.svg#arrow-right"></use>
                         </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
                         <svg>
-                            <use href="images/icons.svg#master"></use>
+                            <use href="images/icons.svg#arrow-right"></use>
                         </svg>
-                    </a>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <a href="">Tik-Tok</a>
+                        <svg>
+                            <use href="images/icons.svg#arrow-right"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-payment-wrap">
+                <h3>Розрахунок:</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            <svg>
+                                <use href="images/icons.svg#visa"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg>
+                                <use href="images/icons.svg#master"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="footer-meta">
             <svg>
                 <use href="images/icons.svg#logo"></use>
             </svg>
+            <span>
+                Тільки якісне автомобільне скло
+                із заміною та установкою
+            </span>
             <p>© 2023 GLASSCAR. All rights reserved.</p>
         </div>
     </div>
@@ -945,7 +955,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="menu-calculator">
                     <a href="">
                         <span>Калькулятор</span>
                         <svg>
@@ -1017,6 +1027,11 @@
                 <use href="images/icons.svg#arrow-right"></use>
             </svg>
         </a>
+        <p>
+            Ми зробили цей калькулятор з метою надати вам можливість самостійно розрахувати вартість встановлення або ремонту
+            автомобільного скла.
+        </p>
+        <img src="images/menu-img.png" alt="" class="menu-image">
         <div class="menu-buttons">
             <button class="menu-install">Встановлення автоскла</button>
             <button class="menu-repair">Ремонт автоскла</button>
@@ -1033,12 +1048,12 @@
         </button>
     </div>
     <form action="">
-        <input type="text" placeholder="Марка автомобіля">
+        <input type="text" placeholder="Марка автомобіля" class="popup-marck">
         <input type="text" placeholder="Рік">
         <input type="text" placeholder="Модель">
         <input type="text" placeholder="Номер телефону">
         <input type="text" placeholder="Імʼя">
-        <input type="text" placeholder="Додаткова інформація">
+        <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
     </form>
     <button class="call">
         <span>Передзвонити</span>
@@ -1080,54 +1095,69 @@
     </form>
     <div class="popup-options">
         <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            тріщін</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+            <div class="option-title-wrap">
+                <button class="option-button">
+                    <svg>
+                        <use href="images/icons.svg#cross-1"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use href="images/icons.svg#cross-2"></use>
+                    </svg>
+                </button>
+                <h3>Ремонт
+                    тріщін</h3>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
+            <div class="option-details-wrap">
+                <div class="option-details">
+                    <p>Час встановлення:</p>
+                    <svg>
+                        <use href="images/icons.svg#pay-1"></use>
+                    </svg>
+                    <span>1,5-2 години</span>
+                </div>
+                <div class="option-details">
+                    <p>Вартість:</p>
+                    <svg>
+                        <use href="images/icons.svg#truck-3"></use>
+                    </svg>
+                    <span>800 ₴</span>
+                </div>
             </div>
         </div>
         <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            сколів</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+            <div class="option-title-wrap">
+                <button class="option-button">
+                    <svg>
+                        <use href="images/icons.svg#cross-1"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use href="images/icons.svg#cross-2"></use>
+                    </svg>
+                </button>
+                <h3>Ремонт
+                    сколів</h3>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
+            <div class="option-details-wrap">
+                <div class="option-details">
+                    <p>Час встановлення:</p>
+                    <svg>
+                        <use href="images/icons.svg#pay-1"></use>
+                    </svg>
+                    <span>1,5-2 години</span>
+                </div>
+                <div class="option-details">
+                    <p>Вартість:</p>
+                    <svg>
+                        <use href="images/icons.svg#truck-3"></use>
+                    </svg>
+                    <span>800 ₴</span>
+                </div>
             </div>
+            
         </div>
     </div>
+    <p class="popup--notif">Працюємо інструментом Equаlizer, полімер CRYSTAL CLEAR США Glasscar® використовує інноваційне обладнання та сучасні
+    високоміцні полімери, що застосовуються в усьому світі.</p>
     <button class="call">
         <span>Передзвонити</span>
         <svg>
@@ -1154,7 +1184,7 @@
         </div>
         <input type="text" placeholder="Номер телефону">
         <input type="text" placeholder="Імʼя">
-        <input type="text" placeholder="Додаткова інформація">
+        <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
     </form>
     <button class="more-options">
         <span>Додаткові Послуги</span>
@@ -1166,110 +1196,134 @@
             <use href="images/icons.svg#arrow-up"></use>
         </svg>
     </button>
-    <ul class="popup-otions-list hidden">
+    <ul class="popup-otions-list hidden horizontal-scroller">
         <li>
             <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            тріщін</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+                <div class="option-title-wrap">
+                    <button class="option-button">
+                        <svg>
+                            <use href="images/icons.svg#cross-1"></use>
+                        </svg>
+                        <svg class="hidden">
+                            <use href="images/icons.svg#cross-2"></use>
+                        </svg>
+                    </button>
+                    <h3>Ремонт
+                        тріщін</h3>
+                </div>
+                <div class="option-details-wrap">
+                    <div class="option-details">
+                        <p>Час встановлення:</p>
+                        <svg>
+                            <use href="images/icons.svg#pay-1"></use>
+                        </svg>
+                        <span>1,5-2 години</span>
+                    </div>
+                    <div class="option-details">
+                        <p>Вартість:</p>
+                        <svg>
+                            <use href="images/icons.svg#truck-3"></use>
+                        </svg>
+                        <span>800 ₴</span>
+                    </div>
+                </div>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
-            </div>
-        </div>
         </li>
         <li>
             <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            тріщін</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+                <div class="option-title-wrap">
+                    <button class="option-button">
+                        <svg>
+                            <use href="images/icons.svg#cross-1"></use>
+                        </svg>
+                        <svg class="hidden">
+                            <use href="images/icons.svg#cross-2"></use>
+                        </svg>
+                    </button>
+                    <h3>Ремонт
+                        тріщін</h3>
+                </div>
+                <div class="option-details-wrap">
+                    <div class="option-details">
+                        <p>Час встановлення:</p>
+                        <svg>
+                            <use href="images/icons.svg#pay-1"></use>
+                        </svg>
+                        <span>1,5-2 години</span>
+                    </div>
+                    <div class="option-details">
+                        <p>Вартість:</p>
+                        <svg>
+                            <use href="images/icons.svg#truck-3"></use>
+                        </svg>
+                        <span>800 ₴</span>
+                    </div>
+                </div>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
-            </div>
-        </div>
         </li>
         <li>
             <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            тріщін</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+                <div class="option-title-wrap">
+                    <button class="option-button">
+                        <svg>
+                            <use href="images/icons.svg#cross-1"></use>
+                        </svg>
+                        <svg class="hidden">
+                            <use href="images/icons.svg#cross-2"></use>
+                        </svg>
+                    </button>
+                    <h3>Ремонт
+                        тріщін</h3>
+                </div>
+                <div class="option-details-wrap">
+                    <div class="option-details">
+                        <p>Час встановлення:</p>
+                        <svg>
+                            <use href="images/icons.svg#pay-1"></use>
+                        </svg>
+                        <span>1,5-2 години</span>
+                    </div>
+                    <div class="option-details">
+                        <p>Вартість:</p>
+                        <svg>
+                            <use href="images/icons.svg#truck-3"></use>
+                        </svg>
+                        <span>800 ₴</span>
+                    </div>
+                </div>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
-            </div>
-        </div>
         </li>
         <li>
             <div class="option">
-            <button class="option-button">
-                <svg>
-                    <use href="images/icons.svg#cross-1"></use>
-                </svg>
-                <svg class="hidden">
-                    <use href="images/icons.svg#cross-2"></use>
-                </svg>
-            </button>
-            <h3>Ремонт<br>
-            тріщін</h3>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#pay-1"></use>
-                </svg>
-                <span>1,5-2 години</span>
+                <div class="option-title-wrap">
+                    <button class="option-button">
+                        <svg>
+                            <use href="images/icons.svg#cross-1"></use>
+                        </svg>
+                        <svg class="hidden">
+                            <use href="images/icons.svg#cross-2"></use>
+                        </svg>
+                    </button>
+                    <h3>Ремонт
+                        тріщін</h3>
+                </div>
+                <div class="option-details-wrap">
+                    <div class="option-details">
+                        <p>Час встановлення:</p>
+                        <svg>
+                            <use href="images/icons.svg#pay-1"></use>
+                        </svg>
+                        <span>1,5-2 години</span>
+                    </div>
+                    <div class="option-details">
+                        <p>Вартість:</p>
+                        <svg>
+                            <use href="images/icons.svg#truck-3"></use>
+                        </svg>
+                        <span>800 ₴</span>
+                    </div>
+                </div>
             </div>
-            <div class="option-details">
-                <svg>
-                    <use href="images/icons.svg#truck-3"></use>
-                </svg>
-                <span>800 ₴</span>
-            </div>
-        </div>
         </li>
     </ul>
     <button class="call">

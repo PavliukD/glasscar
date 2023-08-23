@@ -5,14 +5,18 @@
         width: 100%;
         max-width: 1440px;
         margin: auto;
+        margin-top: 100px;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: start;
+        position: relative;
 
         & > img{
             grid-column-start: 1;
             grid-column-end: 3;
+
+            outline: 1px solid tomato;
         }
     }
 }
@@ -35,6 +39,8 @@
 
     @media (min-width: 768px) {
         width: 78%;
+        position: sticky;
+        top: 40px;
     }
 
     &.container{
@@ -88,6 +94,10 @@
 
 .why--list{
     width: 100%;
+
+    @media (min-width: 768px) {
+        height: 100%;
+    }
 
     &.container{
         @media (min-width: 768px) {

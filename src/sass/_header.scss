@@ -18,6 +18,10 @@ header{
 
     &.on{
         background-color: black;
+
+        @media (min-width: 768px) {
+            background-color: #2A3489;
+        }
     }
 }
 
