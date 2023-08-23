@@ -13,6 +13,7 @@ import HorisontalScroll from './js/HorisontalScroll'
 import ScrollWhy from './js/scroll-why'
 import Hero from './js/hero'
 import Language from './js/language'
+import CalculatorPagination from './js/calculatorPagination'
 
 Brands()
 Steps()
@@ -26,3 +27,4 @@ HorisontalScroll()
 ScrollWhy()
 Hero()
 Language()
+CalculatorPagination()

@@ -16,8 +16,9 @@
     @media (min-width: 768px) {
         background-color: #2A3489;
         max-width: 1440px;
-        // height: max-content;
+        height: fit-content;
         padding-top: 250px;
+        padding-bottom: 250px;
     }
 
     &.hidden{
@@ -202,7 +203,7 @@
         display: block;
         position: absolute;
         right: 72px;
-        bottom: 0;
-        padding-bottom: 14%;
+        bottom: 250px;
+        // padding-bottom: 14%;
     }
 }

@@ -106,9 +106,9 @@
                 <div class="calculator-group">
                     <h3>Данні про авто</h3>
                     <form action="">
-                        <div class="calculator--drop-menu-wrap">
+                        <div class="calculator--drop-menu-wrap car">
                             <div class="calculator--input-wrap">
-                                <input type="text" placeholder="Марка автомобіля">
+                                <input type="text" placeholder="Марка автомобіля" class="car">
                                 <svg>
                                     <use href="images/icons.svg#arrow-down"></use>
                                 </svg>
@@ -593,7 +593,7 @@
                 <div class="calculator-group">
                     <h3>Додаткова інформація</h3>
                     <form action="">
-                        <input type="text" placeholder="VIN-Номер">
+                        <input type="text" placeholder="VIN-Номер" class="vin">
                     </form>
                     <p>VIN код вказано в техпаспорті Вашого автомобіля. А також у всіх сучасних автомобілів номер VIN розташовується
                         в лівій
@@ -643,123 +643,153 @@
                     <h3>Додаткові послуги</h3>
                     <div class="popup-options">
                         <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Ремонт<br>
-                                тріщін</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
                             </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Ремонт<br>
-                                сколів</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
-                            </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
                             </div>
                         </div>
                         <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Ремонт<br>
-                                сколів</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
                             </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Ремонт<br>
-                                сколів</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
-                            </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
                             </div>
                         </div>
                         <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Ремонт<br>
-                                сколів</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
                             </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
+                            </div>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
+                            </div>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -773,12 +803,17 @@
                         <span>3 887 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -789,12 +824,17 @@
                         <span>3 000 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -805,12 +845,17 @@
                         <span>5 100 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -821,12 +866,17 @@
                         <span>10 200 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -837,12 +887,17 @@
                         <span>4 499 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -853,12 +908,17 @@
                         <span>10 200 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -869,12 +929,17 @@
                         <span>4 499 ₴</span>
                         <div>
                             <button class="info">
+                                <span>Детальніше</span>
                                 <svg>
                                     <use href="images/icons.svg#info"></use>
                                 </svg>
                             </button>
                             <button class="add">
-                                <svg>
+                                <span>Обрати</span>
+                                <svg class="arrow">
+                                    <use href="images/icons.svg#arrow-right"></use>
+                                </svg>
+                                <svg class="cross">
                                     <use href="images/icons.svg#cross-1"></use>
                                 </svg>
                             </button>
@@ -885,51 +950,65 @@
             <li>
                 <div class="calculator-group">
                     <h3>Послуги</h3>
-                    <div class="popup-options">
+                    <div class="popup-options services">
                         <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Установка</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
                             </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
                             </div>
                         </div>
                         <div class="option">
-                            <button class="option-button">
-                                <svg>
-                                    <use href="images/icons.svg#cross-1"></use>
-                                </svg>
-                                <svg class="hidden">
-                                    <use href="images/icons.svg#cross-2"></use>
-                                </svg>
-                            </button>
-                            <h3>Доставка</h3>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#pay-1"></use>
-                                </svg>
-                                <span>1,5-2 години</span>
+                            <div class="option-title-wrap">
+                                <button class="option-button">
+                                    <svg>
+                                        <use href="images/icons.svg#cross-1"></use>
+                                    </svg>
+                                    <svg class="hidden">
+                                        <use href="images/icons.svg#cross-2"></use>
+                                    </svg>
+                                </button>
+                                <h3>Ремонт
+                                    тріщін</h3>
                             </div>
-                            <div class="option-details">
-                                <svg>
-                                    <use href="images/icons.svg#truck-3"></use>
-                                </svg>
-                                <span>800 ₴</span>
+                            <div class="option-details-wrap">
+                                <div class="option-details">
+                                    <p>Час встановлення:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#pay-1"></use>
+                                    </svg>
+                                    <span>1,5-2 години</span>
+                                </div>
+                                <div class="option-details">
+                                    <p>Вартість:</p>
+                                    <svg>
+                                        <use href="images/icons.svg#truck-3"></use>
+                                    </svg>
+                                    <span>800 ₴</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -945,9 +1024,13 @@
                     </form>
                 </div>
             </li>
-            <li>
-                <p class="calculator-more-information">Більш точну інформацію надасть наш консультант після відправлення форми. Ми зв'яжемося з вами найближчим часом для
-                уточнення данних.</p>
+            <li class="final">
+                <div class="calculator-more-information">
+                    <p>Більш точну інформацію надасть наш консультант після відправлення форми. Ми
+                        зв'яжемося з вами найближчим часом для
+                        уточнення данних.</p>
+                </div>
+                <h5 class="data">Ваші данні</h5>
                 <button class="more-options">
                     <span>Ваші данні</span>
                     <span class="hidden">Ваші данні</span>
@@ -1016,6 +1099,7 @@
                         <span>3 418 ₴</span>
                     </li>
                 </ul>
+                <h5 class="glass">Данні про скло</h5>
                 <button class="more-options">
                     <span>Данні про скло</span>
                     <span class="hidden">Данні про скло</span>
@@ -1087,6 +1171,7 @@
                 <svg>
                     <use href="images/icons.svg#arrow-left"></use>
                 </svg>
+                <span>Назад</span>
             </button>
             <span class="calculator-pagination-pointer">
                 <span class="current">01</span>
@@ -1094,9 +1179,11 @@
                 <span class="total">05</span>
             </span>
             <button class="right">
+                <span>Далі</span>
                 <svg>
                     <use href="images/icons.svg#arrow-right"></use>
                 </svg>
+                
             </button>
         </div>
     </div>
