@@ -3,6 +3,13 @@ export default function Steps() {
 
     const items = section.querySelectorAll('li')
 
+    if (window.innerWidth >= 768) {
+        items.forEach(item => {
+            item.classList.remove('active')
+        })
+        return
+    }
+
     items.forEach(item => {
         if (!item.classList.contains('active')) {
             return

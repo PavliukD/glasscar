@@ -2,9 +2,24 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
+    @media (min-width: 768px) {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
     & > ul{
         display: flex;
         overflow: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
 
         & > li{
             width: 256px;
@@ -16,16 +31,34 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @media (min-width: 768px) {
+                width: 400px;
+                height: 480px;
+                padding: 40px;
+            }
+
             &:not(:first-child){
                 margin-left: 24px;
+
+                @media (min-width: 768px) {
+                    margin-left: 40px;
+                }
             }
 
             &:first-child{
                 margin-left: 12px;
+
+                @media (min-width: 768px) {
+                    margin-left: 72px;
+                }
             }
 
             &:last-child{
                 margin-right: 12px;
+
+                @media (min-width: 768px) {
+                    margin-right: 72px;
+                }
             }
 
             & h3{
@@ -39,6 +72,17 @@
                 color: #2A3489;
                 height: 48px;
                 align-self: stretch;
+
+                @media (min-width: 768px) {
+                    font-family: Roboto Condensed;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px; /* 100% */
+                    letter-spacing: -1.2px;
+                    text-transform: uppercase;
+                    height: 80px;
+                }
             }
 
             & p{
@@ -54,6 +98,16 @@
                 color: #1A1A1D;
                 text-overflow: ellipsis;
                 whitespace: nowrap;
+
+                @media (min-width: 768px) {
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    height: 120px;
+                    margin-top: 40px;
+                }
             }
 
             & h4{
@@ -64,6 +118,14 @@
                 line-height: 16px;
                 color: #1A1A1D;
                 opacity: 0.4;
+
+                @media (min-width: 768px) {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
             }
 
             & > .down{
@@ -85,6 +147,13 @@
             
                             margin-top: 5px;
                             margin-right: 4px;
+                            flex-shrink: 0;
+
+                            @media (min-width: 768px) {
+                                width: 9px;
+                                height: 9px;
+                                margin-top: 6px;
+                            }
                         }
             
                         &:not(:first-child) {
@@ -98,6 +167,14 @@
                             font-weight: 500;
                             line-height: 16px;
                             color: #1A1A1D;
+
+                            @media (min-width: 768px) {
+                                font-family: Manrope;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }

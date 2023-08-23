@@ -9,6 +9,7 @@ import Menu from './js/menu'
 import Options from './js/options'
 import MoreOptions from './js/more-options'
 import DropMenu from './js/drop-menu'
+import HorisontalScroll from './js/HorisontalScroll'
 
 Brands()
 Steps()
@@ -18,3 +19,4 @@ Menu()
 Options()
 MoreOptions()
 DropMenu()
+HorisontalScroll()
