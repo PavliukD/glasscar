@@ -23,6 +23,11 @@
         color: #1A1A1D;
         opacity: 0.4;
         margin-top: 16px;
+
+        &.calculator-more-information{
+            opacity: 1;
+            color: #FFF;
+        }
     }
 
     & form{
@@ -271,5 +276,66 @@
     }
 }
 
+.calculator--manufacturer-list{
+    margin-top: 8px;
+
+    & > li{
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+        align-items: center;
+
+        &:not(:first-child){
+            margin-top: 8px;
+        }
+
+        & >P{
+            margin: 0;
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px; /* 100% */
+            letter-spacing: -0.48px;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+
+        & span{
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px; /* 100% */
+            letter-spacing: -0.48px;
+            text-transform: uppercase;
+        }
+    }
+    & button{
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+
+        & > svg{
+            width: 16px;
+            height: 16px;
+        }
+
+        &.info{
+            background-color: transparent;
+            border-radius: 200px;
+            border: 1.4px solid #1A1A1D;
+            opacity: 0.4;
+        }
+    }
+}
+
+.calculator-more-information{
+    background-color: #2A3489;
+    padding: 16px;
+    text-align: center;
+    opacity: 1;
+    border-radius: 16px;
+    
+}
 
 

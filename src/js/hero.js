@@ -22,6 +22,7 @@ export default function Hero() {
                 items.forEach(item => item.classList.add('hidden'))
                 items[counter].classList.remove('hidden')
             }
+            current.innerText = `0${counter + 1}`
             return
         }
         counter++
@@ -30,7 +31,7 @@ export default function Hero() {
             items.forEach(item => item.classList.add('hidden'))
             items[counter].classList.remove('hidden')
         }
-        
+        current.innerText = `0${counter + 1}`
     })
 
     left.addEventListener('click', () => {
@@ -41,6 +42,7 @@ export default function Hero() {
                 items.forEach(item => item.classList.add('hidden'))
                 items[counter].classList.remove('hidden')
             }
+            current.innerText = `0${counter + 1}`
             return
         }
         counter--
@@ -49,5 +51,6 @@ export default function Hero() {
             items.forEach(item => item.classList.add('hidden'))
             items[counter].classList.remove('hidden')
         }
+        current.innerText = `0${counter + 1}`
     })
 }
