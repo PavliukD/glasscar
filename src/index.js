@@ -14,6 +14,8 @@ import ScrollWhy from './js/scroll-why'
 import Hero from './js/hero'
 import Language from './js/language'
 import CalculatorPagination from './js/calculatorPagination'
+import Repair from './js/repair'
+import Install from './js/install'
 
 Brands()
 Steps()
@@ -28,3 +30,5 @@ ScrollWhy()
 Hero()
 Language()
 CalculatorPagination()
+Repair()
+Install()

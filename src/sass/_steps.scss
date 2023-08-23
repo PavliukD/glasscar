@@ -16,7 +16,7 @@
         padding-top: 80px;
         padding-bottom: 80px;
         background-color: #FFFFFF;
-
+        position: relative;
 
         & >li{
             padding-bottom: 16px;
@@ -42,6 +42,23 @@
 
             &:not(:first-child){
                 margin-top: 16px;
+            }
+
+            &>img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60%;
+                height: auto;
+                display: none;
+                z-index: 0;
+            }
+
+            &:hover{
+                &>img{
+                    display: block;
+                }
             }
 
 
@@ -71,6 +88,7 @@
                 transition-property: color;
                 transition-duration: 500ms;
                 transition-delay: 0;
+                z-index: 1;
 
                 @media (min-width: 768px) {
                     font-family: Roboto Condensed;
@@ -102,6 +120,7 @@
                     align-items: center;
                     border-radius: 200px;
                     border: 1px solid #1A1A1D;
+                    z-index: 1;
                 }
             }
 
@@ -117,6 +136,7 @@
                 transition-duration: 500ms;
                 transition-delay: 0;
                 transition-property: margin, height;
+                z-index: 1;
 
 
                 @media (min-width: 768px) {

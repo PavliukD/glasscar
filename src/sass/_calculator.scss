@@ -55,6 +55,8 @@
             gap: 24px;
         }
 
+
+
         & input{
             width: 100%;
             border: none;
@@ -75,6 +77,8 @@
                 grid-column-start: 1;
                 grid-column-end: 3;
             }
+
+
 
             @media (min-width: 768px) {
                 font-family: Roboto Condensed;
@@ -318,13 +322,22 @@
     position: relative;
 
     &.car {
-            @media (min-width: 768px) {
+        @media (min-width: 768px) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 100%;
+        }
+    }
+
+    &.method{
+        @media (min-width: 768px) {
                 grid-column-start: 1;
                 grid-column-end: 3;
-                background-color: #F92C2C;
                 width: 100%;
             }
-        }
+    }
+
+
 }
 
 .calculator-drop-menu{
@@ -357,6 +370,10 @@
         border-bottom: 1px solid rgba(26, 26, 29, 0.10);
         background-color: #F6F6F3;
 
+        @media (min-width: 768px) {
+            height: 48px;
+        }
+
         &:hover{
             background-color: #FFF;
 
@@ -378,6 +395,11 @@
             height: 24px;
             stroke: #1A1A1D;
             opacity: 0.4;
+
+            @media (min-width: 768px) {
+                width: 32px;
+                height: 32px;
+            }
         }
 
         & > span{
@@ -390,6 +412,17 @@
             text-transform: uppercase;
             // opacity: 0.4;
             color: rgba(26, 26, 29, 0.40);
+
+            @media (min-width: 768px) {
+                font-family: Roboto Condensed;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 100% */
+                letter-spacing: -0.96px;
+                text-transform: uppercase;
+            }
 
             & > mark {
                 background-color: #2A3489;

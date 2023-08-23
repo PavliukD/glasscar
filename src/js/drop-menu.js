@@ -38,6 +38,10 @@ export default function DropMenu() {
             SearchNotification(counterList.length, notification, initText)
         })
 
+        input.addEventListener('click', () => {
+            items.forEach(item => item.classList.toggle('hidden'))
+        })
+
         items.forEach(item => {
             item.addEventListener('click', () => {
                 const txt = item.querySelector('span')
