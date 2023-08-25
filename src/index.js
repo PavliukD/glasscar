@@ -16,6 +16,7 @@ import Language from './js/language'
 import CalculatorPagination from './js/calculatorPagination'
 import Repair from './js/repair'
 import Install from './js/install'
+import Request from './js/request'
 
 Brands()
 Steps()
@@ -32,3 +33,4 @@ Language()
 CalculatorPagination()
 Repair()
 Install()
+Request()

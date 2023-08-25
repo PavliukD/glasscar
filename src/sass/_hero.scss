@@ -29,16 +29,18 @@
     overflow: hidden;
 
     @media (min-width: 768px) {
-        max-width: 1440px;
+        // max-width: 1440px;
         margin: auto;
     }
 
     & > li{
         flex-shrink: 0;
-
         transition-property: transform;
         transition-duration: 500ms;
         transition-delay: 0;
+        width: 100%;
+
+        
     }
 }
 
