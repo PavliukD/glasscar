@@ -82,7 +82,13 @@
                 grid-column-end: 3;
             }
 
+            &.year{
+                margin-bottom: 16px;
 
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
 
             @media (min-width: 768px) {
                 font-family: Roboto Condensed;
@@ -461,9 +467,6 @@
 .calculator--input-wrap{
     position: relative;
 
-    
-    
-
     & > svg{
         width: 16px;
         height: 16px;
@@ -819,6 +822,33 @@
                     grid-column-start: 1;
                         grid-column-end: 3;
                 }
+            }
+        }
+    }
+}
+
+.calculator-slider{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &>li{
+        flex-shrink: 0;
+        &>button{
+            padding: 0;
+            width: 8px;
+            height: 8px;
+            background-color: #F6F6F3;
+            border: none;
+            border-radius: 100%;
+
+            &.active{
+                background-color: #2A3489;
             }
         }
     }

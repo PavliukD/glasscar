@@ -20,6 +20,7 @@ import Request from './js/request'
 import Info from './js/info'
 import Main from './js/main'
 import Manufacturer from './js/manufacturer'
+import CalculatorSlider from './js/calculatorSlider'
 
 Brands()
 Steps()
@@ -40,3 +41,4 @@ Request()
 Info()
 Main()
 Manufacturer()
+CalculatorSlider()

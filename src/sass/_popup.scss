@@ -508,6 +508,7 @@
     display: flex;
     gap: 8px;
     margin-top: 32px;
+    scroll-behavior: smooth;
 }
 
 .input-wrap{
@@ -702,8 +703,9 @@
     justify-content: center;
     gap: 10px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 24px;
     padding: 12px;
 

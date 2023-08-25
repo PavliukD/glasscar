@@ -6,7 +6,6 @@ export default function Menu() {
     const header = document.querySelector('header')
     const nav = menu.querySelector('nav')
     const items = nav.querySelectorAll('li')
-    console.log(items)
 
     button.addEventListener("click", () => {
         txt.forEach(text => text.classList.toggle('hidden'))
