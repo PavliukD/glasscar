@@ -4,6 +4,9 @@ export default function Menu() {
     const icons = button.querySelectorAll('.header--menu-button-icon')
     const menu = document.querySelector('.menu')
     const header = document.querySelector('header')
+    const nav = menu.querySelector('nav')
+    const items = nav.querySelectorAll('li')
+    console.log(items)
 
     button.addEventListener("click", () => {
         txt.forEach(text => text.classList.toggle('hidden'))
@@ -12,10 +15,11 @@ export default function Menu() {
         menu.classList.toggle('hidden')
         header.classList.toggle('on')
 
-        // if (menu.classList.contains('hidden')) {
-        //     menu.style.height = "0px"
-        //     return
-        // }
-        //  menu.style.height =  `${menu.scrollHeight}px`
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                menu.classList.add('hidden')
+                header.classList.remove('on')
+            })
+        })
     })
 }

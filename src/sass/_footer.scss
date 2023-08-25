@@ -4,10 +4,12 @@ footer{
     padding-top: 80px;
     margin-top: 40px;
     
+    
     & >.container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
+        position: relative;
 
         @media (min-width: 768px) {
             grid-template-columns: repeat(4, 1fr);
@@ -397,5 +399,45 @@ footer{
         grid-column-end: 5;
         display: flex;
         flex-direction: column;
+    }
+}
+
+.footer--to-main{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    border: none;
+    background-color: transparent;
+
+    @media (min-width: 768px) {
+        gap: 85px;
+        right: 13%;
+        
+    }
+
+    & > span{
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        color: #FFF;
+
+        @media (min-width: 768px) {
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    & > svg{
+        width: 16px;
+        height: 16px;
+        stroke: #FFF;
     }
 }

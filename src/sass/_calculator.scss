@@ -271,6 +271,7 @@
                 display: none;
 
                 @media (min-width: 768px) {
+                    display: block;
                     font-family: Manrope;
                     font-size: 14px;
                     font-style: normal;
@@ -294,6 +295,7 @@
                 display: none;
 
                 @media (min-width: 768px) {
+                    display: block;
                     font-family: Manrope;
                     font-size: 14px;
                     font-style: normal;
@@ -506,11 +508,21 @@
 
 .calculator--manufacturer-list{
     margin-top: 8px;
+    overflow: auto;
+    max-height: 560px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #2A3489;
+    }
 
     @media (min-width: 768px) {
         margin-top: 32px;
         max-height: 560px;
-        overflow: auto;
+        
     }
 
     & > li{
@@ -557,6 +569,10 @@
             transition-property: margin-left;
             transition-duration: 500ms;
             transition-delay: 0;
+
+            &.active{
+                color: #2A3489;
+            }
 
             @media (min-width: 768px) {
                 font-family: Roboto Condensed;
@@ -656,6 +672,20 @@
             background: #2A3489;
             border: 1.4px solid #2A3489;
 
+            &.active{
+                background-color: #FFF;
+
+                &> svg{
+                    stroke: #2A3489;
+                }
+
+                &> span{
+                    color: #2A3489;
+                }
+
+
+            }
+
             @media (min-width: 768px) {
                 &:hover{
                     background-color: #FFF;
@@ -672,6 +702,11 @@
 
             & >svg{
                 stroke: #FFF;
+                opacity: 1;
+
+                &.hidden{
+                    display: none;
+                }
 
                 &.arrow{
                     display: none;

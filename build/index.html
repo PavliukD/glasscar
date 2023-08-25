@@ -34,7 +34,7 @@
         <button class="menu-repair" data-repair="">Ремонт автоскла</button>
     </div>
 </header>
-    <section class="hero">
+    <section class="hero" id="hero">
     <div class="container">
         <span class="hero--slider-pointer">
             <span class="hero--slider-pointer-current">01</span>
@@ -99,7 +99,7 @@
     </ul>
 
 </section>
-    <section class="calculator">
+    <section class="calculator" id="calculator">
     <div class="container">
         <ul>
             <li>
@@ -815,7 +815,10 @@
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -832,11 +835,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -853,11 +860,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -874,11 +885,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -895,11 +910,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -916,11 +935,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -937,11 +960,15 @@
                             </button>
                             <button class="add">
                                 <span>Обрати</span>
+                                <span class="hidden">Відміна</span>
                                 <svg class="arrow">
                                     <use href="images/icons.svg#arrow-right"></use>
                                 </svg>
                                 <svg class="cross">
-                                    <use href="images/icons.svg#cross-1"></use>
+                                    <use href="images/icons.svg#cross-3"></use>
+                                </svg>
+                                <svg class="cross hidden">
+                                    <use href="images/icons.svg#cross-2"></use>
                                 </svg>
                             </button>
                         </div>
@@ -962,23 +989,15 @@
                                         <use href="images/icons.svg#cross-2"></use>
                                     </svg>
                                 </button>
-                                <h3>Ремонт
-                                    тріщін</h3>
+                                <h3>Установка</h3>
                             </div>
                             <div class="option-details-wrap">
-                                <div class="option-details">
+                                <div class="option-details calc">
                                     <p>Час встановлення:</p>
                                     <svg>
                                         <use href="images/icons.svg#pay-1"></use>
                                     </svg>
-                                    <span>1,5-2 години</span>
-                                </div>
-                                <div class="option-details">
-                                    <p>Вартість:</p>
-                                    <svg>
-                                        <use href="images/icons.svg#truck-3"></use>
-                                    </svg>
-                                    <span>800 ₴</span>
+                                    <span>від 2 годин</span>
                                 </div>
                             </div>
                         </div>
@@ -992,23 +1011,22 @@
                                         <use href="images/icons.svg#cross-2"></use>
                                     </svg>
                                 </button>
-                                <h3>Ремонт
-                                    тріщін</h3>
+                                <h3>Доставка</h3>
                             </div>
                             <div class="option-details-wrap">
-                                <div class="option-details">
-                                    <p>Час встановлення:</p>
+                                <div class="option-details calc">
+                                    <p>Доставка:</p>
                                     <svg>
                                         <use href="images/icons.svg#pay-1"></use>
                                     </svg>
-                                    <span>1,5-2 години</span>
+                                    <span>Київу -- безкоштовно</span>
                                 </div>
-                                <div class="option-details">
-                                    <p>Вартість:</p>
+                                <div class="option-details calc">
+                                    <p>Оператор:</p>
                                     <svg>
                                         <use href="images/icons.svg#truck-3"></use>
                                     </svg>
-                                    <span>800 ₴</span>
+                                    <span>Україні -- Нова Пошта</span>
                                 </div>
                             </div>
                         </div>
@@ -1221,7 +1239,7 @@
         </div>
     </div>
 </section>
-    <section class="about">
+    <section class="about" id="about">
     <ul class="about--list">
         <li class="about--list-item">
             <img src="images/about-1.png" alt="">
@@ -1315,7 +1333,7 @@
         </li>
     </ul>
 </section>
-    <section class="why scroll">
+    <section class="why scroll" id="why">
     <img src="images/why.png" alt="" class="why--image">
     <div class="container">
         <div class="why--title-wrap">
@@ -1366,7 +1384,7 @@
         </ul>
     </div>
 </section>
-    <section class="segment">
+    <section class="segment" id="segment">
     <div class="container">
         <p>Як правило, ми пропонуємо автоскло
         в залежності від бюджету клієнта</p>
@@ -1503,7 +1521,7 @@
     </button></div>
     
 </section>
-    <section class="steps">
+    <section class="steps" id="steps">
     <img src="images/steps.png" alt="">
     <ul class="container">
         <li class="active">
@@ -1547,7 +1565,7 @@
         </li>
     </ul>
 </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
     <ul class="horizontal-scroller">
         <li>
             <svg class="rewiews-car-logo">
@@ -1690,7 +1708,7 @@
         </li>
     </ul>
 </section>
-    <section class="questions">
+    <section class="questions" id="faq">
     <img src="images/questions.png" alt="">
     <div class="container">
         <h2>FREquently
@@ -1944,7 +1962,7 @@
         </div>
     </button>
 </section>
-    <footer>
+    <footer id="footer">
     <div class="container">
         <div class="footer-not">
             <div>
@@ -1960,55 +1978,55 @@
             <h3>Головна</h3>
             <ul class="footer-nav">
                 <li>
-                    <a href="">Головна</a>
+                    <a href="#hero">Головна</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Калькулятор</a>
+                    <a href="#calculator">Калькулятор</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Про glasscar</a>
+                    <a href="#about">Про glasscar</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Чому ми?</a>
+                    <a href="#why">Чому ми?</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Виробники</a>
+                    <a href="#segment">Виробники</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Етапи роботи</a>
+                    <a href="#steps">Етапи роботи</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Відгуки</a>
+                    <a href="#reviews">Відгуки</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">FAQ</a>
+                    <a href="#faq">FAQ</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
                 </li>
                 <li>
-                    <a href="">Контакти</a>
+                    <a href="#footer">Контакти</a>
                     <svg>
                         <use href="images/icons.svg#arrow-right"></use>
                     </svg>
@@ -2093,14 +2111,21 @@
             </span>
             <p>© 2023 GLASSCAR. All rights reserved.</p>
         </div>
+        <button class="footer--to-main">
+            <span>На головну</span>
+            <svg>
+                <use href="images/icons.svg#arrow-up"></use>
+            </svg>
+        </button>
     </div>
+    
 </footer>
     <div class="menu hidden">
     <div class="container">
         <nav>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="#hero">
                         <span>Головна</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2108,7 +2133,7 @@
                     </a>
                 </li>
                 <li class="menu-calculator">
-                    <a href="">
+                    <a href="#calculator">
                         <span>Калькулятор</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2116,7 +2141,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#about">
                         <span>Про glasscar</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2124,7 +2149,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#why">
                         <span>Чому Ми?</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2132,7 +2157,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#segment">
                         <span>Виробники</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2140,7 +2165,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#steps">
                         <span>Етапи роботи</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2148,7 +2173,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#reviews">
                         <span>Відгуки</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2156,7 +2181,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#faq">
                         <span>FAQ</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>
@@ -2164,7 +2189,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#footer">
                         <span>Контакти</span>
                         <svg>
                             <use href="images/icons.svg#arrow-right"></use>

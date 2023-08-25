@@ -18,6 +18,8 @@ import Repair from './js/repair'
 import Install from './js/install'
 import Request from './js/request'
 import Info from './js/info'
+import Main from './js/main'
+import Manufacturer from './js/manufacturer'
 
 Brands()
 Steps()
@@ -36,3 +38,5 @@ Repair()
 Install()
 Request()
 Info()
+Main()
+Manufacturer()
