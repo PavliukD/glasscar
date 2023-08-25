@@ -589,6 +589,8 @@
     align-items: center;
     justify-content: space-between;
 
+    
+
     @media (min-width: 768px) {
         display: none;
     }
@@ -637,6 +639,10 @@
     padding-bottom: 64px;
     margin-top: 14px;
     border-top: 1px solid rgba(26, 26, 29, 0.40);
+
+    transition-property: height;
+        transition-duration: 500ms;
+        transition-delay: 0;
 
     @media (min-width: 768px) {
         column-count: 2;

@@ -21,6 +21,7 @@ import Info from './js/info'
 import Main from './js/main'
 import Manufacturer from './js/manufacturer'
 import CalculatorSlider from './js/calculatorSlider'
+import calculatorLists from './js/calculatorLists'
 
 Brands()
 Steps()
@@ -42,3 +43,4 @@ Info()
 Main()
 Manufacturer()
 CalculatorSlider()
+calculatorLists()

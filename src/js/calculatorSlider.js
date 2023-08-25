@@ -13,8 +13,6 @@ export default function CalculatorSlider() {
     list.addEventListener('scroll', () => {
         const visibleEl = list.scrollLeft / nuEto
 
-        console.log(list.scrollLeft)
-
         if (!buttons[Math.trunc(visibleEl)]) {
             return
         }
