@@ -3,7 +3,7 @@ export default function Options() {
     options.forEach(option => {
         const button = option.querySelector('.option-button')
         const icons = button.querySelectorAll('svg')
-        button.addEventListener('click', () => {
+        option.addEventListener('click', () => {
             option.classList.toggle('on')
             icons.forEach(icon => icon.classList.toggle('hidden'))
         })

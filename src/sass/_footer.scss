@@ -28,7 +28,7 @@ footer{
             font-family: Manrope;
             font-size: 18px;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             line-height: 28px;
             margin-bottom: 24px;
         }
@@ -73,6 +73,18 @@ footer{
                 margin-top: 8px;
             }
         }
+
+        @media (min-width: 768px) {
+            &:hover{
+                &> svg{
+                    opacity: 1;
+                }
+
+                &> a{
+                    margin-left: 16px;
+                }
+            }
+        }
     }
 
     & svg{
@@ -81,7 +93,11 @@ footer{
         stroke: #FFF;
 
         @media (min-width: 768px) {
-            display: none;
+            opacity: 0;
+
+            transition-property: opacity;
+            transition-duration: 500ms;
+            transition-delay: 0;
         }
     }
 
@@ -99,6 +115,10 @@ footer{
             font-style: normal;
             font-weight: 500;
             line-height: 24px; 
+
+            transition-property: margin-left;
+            transition-duration: 500ms;
+            transition-delay: 0;
         }
     }
 }
@@ -132,11 +152,12 @@ footer{
         }
 
         & > p{
-            width: 73%;
+            width: 257px;
 
             @media (min-width: 768px) {
-                max-width: 271px;
+                max-width: 300px;
                 margin-top: 80px;
+                font-weight: 500;
             }
         }
     }
@@ -250,6 +271,18 @@ footer{
                 margin-top: 8px;
             }
         }
+
+        @media (min-width: 768px) {
+            &:hover{
+                &> svg{
+                    opacity: 1;
+                }
+
+                &> a{
+                    margin-left: 16px;
+                }
+            }
+        }
     }
 
     & svg {
@@ -258,7 +291,11 @@ footer{
             stroke: #FFF;
 
             @media (min-width: 768px) {
-                display: none;
+                opacity: 0;
+
+                transition-property: opacity;
+                transition-duration: 500ms;
+                transition-delay: 0;
             }
         }
     
@@ -276,6 +313,10 @@ footer{
             font-style: normal;
             font-weight: 500;
             line-height: 24px; 
+
+            transition-property: margin-left;
+            transition-duration: 500ms;
+            transition-delay: 0;
         }
     }
 }

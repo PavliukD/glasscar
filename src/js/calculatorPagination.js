@@ -10,11 +10,13 @@ export default function CalculatorPagination() {
     const right = pagination.querySelector('.right')
 
     const current = pagination.querySelector('.current')
+    const popup = document.querySelector('[data-thnx=""]')
 
     let counter = 0
 
     right.addEventListener('click', () => {
         if (counter === 4) {
+            popup.classList.remove('hidden')
             return
         }
         counter++
