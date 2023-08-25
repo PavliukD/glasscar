@@ -268,12 +268,16 @@
             }
 
             & span{
-                font-family: Manrope;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 22px;
-                color: #1A1A1D;
+                display: none;
+
+                @media (min-width: 768px) {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #1A1A1D;
+                }
             }
 
         }
@@ -287,12 +291,16 @@
             }
 
             & span {
-                font-family: Manrope;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 22px;
-                color: #FFF;
+                display: none;
+
+                @media (min-width: 768px) {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #FFF;
+                }
             }
         }
 
@@ -512,6 +520,10 @@
         padding: 8px 0px;
         border-bottom: 1px solid rgba(26, 26, 29, 0.40);
 
+        transition-property: border-bottom;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
         &:not(:first-child){
             margin-top: 8px;
         }
@@ -541,6 +553,10 @@
             letter-spacing: -0.48px;
             text-transform: uppercase;
             opacity: 1;
+
+            transition-property: margin-left;
+            transition-duration: 500ms;
+            transition-delay: 0;
 
             @media (min-width: 768px) {
                 font-family: Roboto Condensed;
@@ -602,8 +618,18 @@
         &.info{
             background-color: transparent;
             border-radius: 200px;
-            border: 1.4px solid #1A1A1D;
+            border: 1.4px solid #2A3489;
             opacity: 0.4;
+
+            @media (min-width: 768px) {
+                &:hover{
+                    background-color: #2A3489;
+
+                    & > span{
+                        color: #FFF;
+                    }
+                }
+            }
 
             & > span{
                 display: none;
@@ -629,6 +655,20 @@
         &.add{
             background: #2A3489;
             border: 1.4px solid #2A3489;
+
+            @media (min-width: 768px) {
+                &:hover{
+                    background-color: #FFF;
+
+                    &> span{
+                        color: #2A3489;
+                    }
+
+                    & > svg{
+                        stroke: #2A3489;
+                    }
+                }
+            }
 
             & >svg{
                 stroke: #FFF;
@@ -659,6 +699,10 @@
                     line-height: 22px;
                     color: #FFF;
                     text-transform: none;
+
+                    &.hidden{
+                        display: none;
+                    }
                 }
             }
         }
