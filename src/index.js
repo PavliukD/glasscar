@@ -23,6 +23,7 @@ import Manufacturer from './js/manufacturer'
 import CalculatorSlider from './js/calculatorSlider'
 import calculatorLists from './js/calculatorLists'
 import Backdrop from './js/backdrop'
+import StepsHover from './js/stepsHover'
 
 Brands()
 Steps()
@@ -46,3 +47,4 @@ Manufacturer()
 CalculatorSlider()
 calculatorLists()
 Backdrop()
+StepsHover()

@@ -61,7 +61,13 @@
                 z-index: -1;
             }
 
-            &:hover{
+            // &:hover{
+            //     &>img{
+            //         display: block;
+            //     }
+            // }
+
+            &.shown{
                 &>img{
                     display: block;
                 }
