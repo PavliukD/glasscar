@@ -1,3 +1,5 @@
+import Thnx from "./thnx"
+
 export default function CalculatorPagination() {
     const wrap = document.querySelector('.calculator')
     const cont = wrap.querySelector('.container')
@@ -11,12 +13,21 @@ export default function CalculatorPagination() {
 
     const current = pagination.querySelector('.current')
     const popup = document.querySelector('[data-thnx=""]')
+    
 
     let counter = 0
 
     right.addEventListener('click', () => {
         if (counter === 4) {
-            popup.classList.remove('hidden')
+            const nameInput = document.querySelector('[data-calculator="name"]')
+            const name = nameInput.value
+            Thnx(name, true)
+            counter = 0
+            for (let i = 0; i < items.length; i++){
+                items[i].style.transform = `translateX(-${list.clientWidth * counter}px)`
+            }
+            current.innerText = `0${counter + 1}`
+            left.classList.remove('active')
             return
         }
         counter++
@@ -24,6 +35,7 @@ export default function CalculatorPagination() {
             items[i].style.transform = `translateX(-${list.clientWidth * counter}px)`
         }
         current.innerText = `0${counter + 1}`
+        left.classList.add('active')
     })
 
     left.addEventListener('click', () => {
@@ -35,5 +47,8 @@ export default function CalculatorPagination() {
             items[i].style.transform = `translateX(-${list.clientWidth * counter}px)`
         }
         current.innerText = `0${counter + 1}`
+        if (counter === 0) {
+            left.classList.remove('active')
+        }
     })
 }

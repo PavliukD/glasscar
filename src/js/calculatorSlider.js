@@ -4,7 +4,6 @@ export default function CalculatorSlider() {
 
     const list = document.querySelector('[data-slider="calculator-slider"]')
     const items = list.querySelectorAll('.option')
-    console.dir(list)
     const totalWidth = list.scrollWidth
     const visibleWidth = list.clientWidth
 

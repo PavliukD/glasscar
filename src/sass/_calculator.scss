@@ -268,6 +268,13 @@
             border: 1.4px solid #1A1A1D;
             background-color: transparent;
             opacity: 0.2;
+            transition-property: opacity;
+            transition-duration: 500ms;
+            transition-delay: 0;
+
+            &.active{
+                opacity: 1;
+            }
 
             & > svg{
                 stroke: #1A1A1D;
@@ -618,6 +625,7 @@
         width: 32px;
         height: 32px;
         border-radius: 100%;
+        padding: 0;
 
         @media (min-width: 768px) {
             width: fit-content;
@@ -637,12 +645,15 @@
         &.info{
             background-color: transparent;
             border-radius: 200px;
-            border: 1.4px solid #2A3489;
+            border: 1.4px solid #1A1A1D;
             opacity: 0.4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @media (min-width: 768px) {
                 &:hover{
-                    background-color: #2A3489;
+                    background-color: #1A1A1D;
 
                     & > span{
                         color: #FFF;
@@ -665,6 +676,7 @@
             }
 
             & > svg{
+                stroke: #1A1A1D;
                 @media (min-width: 768px) {
                     display: none;
                 }
@@ -674,6 +686,10 @@
         &.add{
             background: #2A3489;
             border: 1.4px solid #2A3489;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &.active{
                 background-color: #FFF;
@@ -718,9 +734,21 @@
                 @media (min-width: 768px) {
                     &.cross{
                         display: none;
+
+                        &.close{
+                            display: block;
+
+                            &.hidden{
+                                display: none;
+                            }
+                        }
                     }
                     &.arrow{
                         display: block;
+
+                        &.hidden{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -785,10 +813,11 @@
     &>.popup-options {
         margin-top: 16px;
         width: 100%;
-        overflow: scroll;
+        overflow: auto;
         
 
         @media (min-width: 768px) {
+            width: 100%;
             overflow: hidden;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -796,12 +825,13 @@
 
             &.services{
                 grid-template-columns: repeat(2, 1fr);
+
             }
         }
 
         &>.option {
             flex-shrink: 0;
-            max-width: 168px;
+            max-width: calc((100% / 2) - 4px);
 
             @media (min-width: 768px) {
                 max-width: 100%;

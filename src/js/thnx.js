@@ -17,9 +17,10 @@ export default function Thnx(name, backdrop){
             },2500)
             return
         }
+        console.log('wtf')
         blueBackdrop.classList.remove('hidden')
         setTimeout(() => {
-            blackBackdrop.classList.add('hidden')
+            blueBackdrop.classList.add('hidden')
             unnamed.classList.add('hidden')
         },2500)
         return
@@ -37,7 +38,7 @@ export default function Thnx(name, backdrop){
     }
     blueBackdrop.classList.remove('hidden')
     setTimeout(() => {
-        blackBackdrop.classList.add('hidden')
+        blueBackdrop.classList.add('hidden')
         named.classList.add('hidden')
     },2500)
     return
