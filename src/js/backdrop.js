@@ -5,7 +5,7 @@ export default function Backdrop() {
 
     backdrop.addEventListener('click', (e) => {
         popups.forEach(popup => popup.classList.add('hidden'))
-        thnx.forEach(thx => thx.classList.add(hidden))
+        thnx.forEach(thx => thx.classList.add('hidden'))
         backdrop.classList.add('hidden')
     })
 
