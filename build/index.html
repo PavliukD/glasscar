@@ -2246,7 +2246,7 @@
         <input type="text" placeholder="Рік">
         <input type="text" placeholder="Модель">
         <input type="text" placeholder="Номер телефону">
-        <input type="text" placeholder="Імʼя">
+        <input type="text" placeholder="Імʼя" class="install--name">
         <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
     </form>
     <button class="call">
@@ -2285,7 +2285,7 @@
         <input type="text" placeholder="Марка автомобіля">
         <input type="text" placeholder="Модель">
         <input type="text" placeholder="Номер телефону">
-        <input type="text" placeholder="Імʼя">
+        <input type="text" placeholder="Імʼя" class="install--name">
     </form>
     <div class="popup-options">
         <div class="option">
@@ -2360,7 +2360,11 @@
     </button>
     
 </div>
-    <div class="popup install hidden">
+    <div class="backdrop hidden">
+</div>
+<div class="backdrop-blue hidden">
+</div>
+<div class="popup install hidden">
     <div class="popup--title">
         <span>Встановлення автоскла</span>
         <button>
@@ -2377,7 +2381,7 @@
             <input type="text" placeholder="Тип скла">
         </div>
         <input type="text" placeholder="Номер телефону">
-        <input type="text" placeholder="Імʼя">
+        <input type="text" placeholder="Імʼя" class="install--name">
         <input type="text" placeholder="Додаткова інформація" class="popup-more-information">
     </form>
     <button class="more-options">
@@ -2591,13 +2595,13 @@
         </li>
     </ul>
 </div>
-    <div class="thnx-popup hidden" data-thnx="">
+    <div class="thnx-popup hidden" data-thnx="unnamed">
     <h2>Дякуємо!</h2>
     <p>З повагою команда GLASSCAR.
     Очикуйте на дзвінок ;)</p>
 </div>
-    <div class="thnx-popup hidden">
-    <h2>Дякуємо, Артур!</h2>
+    <div class="thnx-popup hidden" data-thnx="named">
+    <h2>Дякуємо, <span class="thnx-popup--name">Артур!</span></h2>
     <p>З повагою команда GLASSCAR.
         Очикуйте на дзвінок ;)</p>
 </div>

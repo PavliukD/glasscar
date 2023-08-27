@@ -4,13 +4,18 @@ export default function Info() {
     const closeWrap = drop.querySelector('.popup--title')
     const close = closeWrap.querySelector('button')
 
+    const backdrop = document.querySelector('.backdrop')
+
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             drop.classList.remove('hidden')
+            backdrop.classList.remove('hidden')
+            
         })
     })
 
     close.addEventListener('click', () => {
         drop.classList.add('hidden')
+        backdrop.classList.add('hidden')
     })
 }

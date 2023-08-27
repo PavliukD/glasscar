@@ -22,6 +22,7 @@ import Main from './js/main'
 import Manufacturer from './js/manufacturer'
 import CalculatorSlider from './js/calculatorSlider'
 import calculatorLists from './js/calculatorLists'
+import Backdrop from './js/backdrop'
 
 Brands()
 Steps()
@@ -44,3 +45,4 @@ Main()
 Manufacturer()
 CalculatorSlider()
 calculatorLists()
+Backdrop()
