@@ -25,7 +25,7 @@
     }
 
     &:not(:first-child){
-        margin-top: 40px;
+        // margin-top: 40px;
 
         @media (min-width: 768px) {
             margin-top: 0;
@@ -73,7 +73,7 @@
     & img{
         display: block;
         width: 100%;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
 
         @media (min-width: 768px) {
             margin-bottom: 0;
@@ -171,7 +171,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 440px;
+    height: 520px;
     padding-top: 40px;
     padding-bottom: 40px;
 
