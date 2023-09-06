@@ -24,6 +24,7 @@ import CalculatorSlider from './js/calculatorSlider'
 import calculatorLists from './js/calculatorLists'
 import Backdrop from './js/backdrop'
 import StepsHover from './js/stepsHover'
+import JobsCards from './js/jobsCards'
 
 Brands()
 Steps()
@@ -48,3 +49,4 @@ CalculatorSlider()
 calculatorLists()
 Backdrop()
 StepsHover()
+JobsCards()
