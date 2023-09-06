@@ -18,6 +18,8 @@ export default function Menu() {
             item.addEventListener('click', () => {
                 menu.classList.add('hidden')
                 header.classList.remove('on')
+                icons.forEach(icon => icon.classList.toggle('hidden'))
+                txt.forEach(text => text.classList.toggle('hidden'))
             })
         })
     })

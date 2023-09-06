@@ -2,6 +2,11 @@ import Thnx from "./thnx"
 
 export default function CalculatorPagination() {
     const wrap = document.querySelector('.calculator')
+
+    if (!wrap) {
+        return
+    }
+
     const cont = wrap.querySelector('.container')
     const list = cont.children[0]
     const items = list.children

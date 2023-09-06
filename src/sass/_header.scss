@@ -89,7 +89,10 @@ header{
         gap: 4px;
     
     
-        & button {
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: fit-content;
             border-radius: 200px;
             border: 1.4px solid #FFF;

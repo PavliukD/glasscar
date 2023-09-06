@@ -1,5 +1,10 @@
 export default function StepsHover() {
     const block = document.querySelector('.steps')
+
+    if (!block) {
+        return
+    }
+
     const items = block.querySelectorAll('li')
 
     items.forEach(item => {

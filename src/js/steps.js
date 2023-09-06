@@ -1,6 +1,10 @@
 export default function Steps() {
     const section = document.querySelector('.steps')
 
+    if (!section) {
+        return
+    }
+
     const items = section.querySelectorAll('li')
 
     if (window.innerWidth >= 768) {

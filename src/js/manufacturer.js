@@ -1,5 +1,10 @@
 export default function Manufacturer() {
     const list = document.querySelector('.calculator--manufacturer-list')
+
+    if (!list) {
+        return
+    }
+
     const items = list.querySelectorAll('li')
 
     items.forEach(item => {

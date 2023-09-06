@@ -1,5 +1,10 @@
 export default function Seo() {
     const base = document.querySelector('.seo')
+
+    if (!base) {
+        return
+    }
+
     const list = base.querySelector('.seo-list')
     const button = base.querySelector('.seo-button')
     const height = 240

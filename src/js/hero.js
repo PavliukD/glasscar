@@ -1,6 +1,10 @@
 export default function Hero() {
     const hero = document.querySelector('.hero')
 
+    if (!hero) {
+        return
+    }
+
     const left = hero.querySelector('.left')
     const right = hero.querySelector('.right')
 

@@ -1,5 +1,10 @@
 export default function CalculatorSlider() {
     const control = document.querySelector('.calculator-slider')
+
+    if (!control) {
+        return
+    }
+
     const buttons = control.querySelectorAll('button')
 
     const list = document.querySelector('[data-slider="calculator-slider"]')

@@ -1,5 +1,10 @@
 export default function calculatorLists() {
     const calculator = document.querySelector('.calculator')
+
+    if (!calculator) {
+        return
+    }
+
     const wrap = calculator.querySelector('.final')
 
     const lists = wrap.querySelectorAll('ul')

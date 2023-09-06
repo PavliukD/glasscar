@@ -30,8 +30,8 @@
         </svg>
     </button>
     <div class="header--desctop-linksset">
-        <button class="menu-install" data-install="">Встановлення автоскла</button>
-        <button class="menu-repair" data-repair="">Ремонт автоскла</button>
+        <a class="menu-install" data-install="">Встановлення автоскла</a>
+        <a class="menu-repair" data-repair="">Ремонт автоскла</a>
     </div>
 </header>
     <section class="hero" id="hero">
@@ -587,7 +587,36 @@
                             </ul>
                         </div>
                         <input type="text" placeholder="Модель">
-                        <input type="text" placeholder="Номер телефону">
+                        <div class="calculator--drop-menu-wrap">
+                            <div class="calculator--input-wrap">
+                                <input type="text" placeholder="Тип кузову">
+                                <svg>
+                                    <use href="images/icons.svg#arrow-down"></use>
+                                </svg>
+                                <span class="results hidden">результатів пошуку</span>
+                                <span class="error hidden">Помилка!</span>
+                            </div>
+                            <ul class="calculator-drop-menu">
+                                <li class="hidden">
+                                    <span>AC-Cars</span>
+                                    <svg>
+                                        <use href="images/cars.svg#AC-Cars"></use>
+                                    </svg>
+                                </li>
+                                <li class="hidden">
+                                    <span>Acura</span>
+                                    <svg>
+                                        <use href="images/cars.svg#Acura"></use>
+                                    </svg>
+                                </li>
+                                <li class="hidden">
+                                    <span>Alfa-Romeo</span>
+                                    <svg>
+                                        <use href="images/cars.svg#Alfa-Romeo"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
                 <div class="calculator-group">
@@ -1733,7 +1762,7 @@
             </svg>
         </button>
         <ul>
-            <li>
+            <li class="active">
                 <span>01</span>
                 <h3>Чи можна замовити доставку автоскла
                     до регіонів?</h3>
@@ -2222,8 +2251,8 @@
         </p>
         <img src="images/menu-img.png" alt="" class="menu-image">
         <div class="menu-buttons">
-            <button class="menu-install" data-install="">Встановлення автоскла</button>
-            <button class="menu-repair" data-repair="">Ремонт автоскла</button>
+            <a class="menu-install" data-install="">Встановлення автоскла</a>
+            <a class="menu-repair" data-repair="">Ремонт автоскла</a>
         </div>
     </div>
 </div>

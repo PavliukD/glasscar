@@ -142,6 +142,7 @@
                 }
 
                 &.active{
+
                     & > span{
                         background-color: #1A1A1D;
                         color: #F6F6F3;
@@ -149,6 +150,7 @@
 
                     & > p{
                         margin-top: 16px;
+                        // height: fit-content;
                     }
 
                     & > h3{

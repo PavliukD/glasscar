@@ -1,5 +1,10 @@
 export default function Brands() {
     const base = document.querySelector('.segment--content-list')
+
+    if (!base) {
+        return
+    }
+
     const cathegoriesList = document.querySelector('.segment--cathegories-list')
     const cathegories = cathegoriesList.querySelectorAll('li')
     const massive = [...cathegories]
