@@ -129,6 +129,51 @@
             margin-left: auto;
         }
     }
+
+    & >ul{
+        justify-self: right;
+        width: 100%;
+        max-width: 454px;
+
+        &>li{
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            font-family: Manrope;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            color: #FFF;
+            width: 90%;
+
+            @media (min-width: 768px) {
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+        
+            }
+        
+        
+            &::before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: #FFF;
+                margin-right: 8px;
+                margin-top: 5px;
+        
+                @media (min-width: 768px) {
+                    margin-top: 8px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
 }
 
 .hero--banner-mini-list{
