@@ -1,7 +1,8 @@
 .seo{
     margin-top: 80px;
 
-    & > ul{
+
+    & > div{
         position: relative;
         height: 240px;
         overflow: hidden;
@@ -27,6 +28,44 @@
             }
         }
 
+            & > ul{
+            margin-bottom: 16px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 42px;
+            }
+            
+            & > li{
+                display: flex;
+                align-items: flex-start;
+
+                &:before{
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    background-color: #1A1A1D;
+                    border-radius: 100%;
+                    margin-top: 5px;
+                    margin-right: 4px;
+                    flex-shrink: 0;
+
+                    @media (min-width: 768px) {
+                        width: 7px;
+                        height: 7px;
+                        margin-top: 7px;
+                    }
+                }
+
+                &:not(:first-child){
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        & > ol{
+            list-style: none;
+        }
+
 
         & > li{
             &:not(:first-child){
@@ -37,43 +76,7 @@
                 }
             }
 
-            & > ul{
-                margin-bottom: 16px;
 
-                @media (min-width: 768px) {
-                    margin-bottom: 42px;
-                }
-                
-                & > li{
-                    display: flex;
-                    align-items: flex-start;
-
-                    &:before{
-                        content: '';
-                        width: 4px;
-                        height: 4px;
-                        background-color: #1A1A1D;
-                        border-radius: 100%;
-                        margin-top: 5px;
-                        margin-right: 4px;
-                        flex-shrink: 0;
-
-                        @media (min-width: 768px) {
-                            width: 7px;
-                            height: 7px;
-                            margin-top: 7px;
-                        }
-                    }
-
-                    &:not(:first-child){
-                        margin-top: 8px;
-                    }
-                }
-            }
-
-            & > ol{
-                list-style: none;
-            }
         }
     }
 
@@ -124,6 +127,7 @@
         font-weight: 400;
         line-height: 16px;
         color: #1A1A1D;
+        width: 100%;
 
         @media (min-width: 768px) {
             font-family: Manrope;

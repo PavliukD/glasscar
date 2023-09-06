@@ -115,6 +115,10 @@
         background-color: #FFF;
         padding: 24px;
 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
         @media (min-width: 768px) {
             max-width: 636px;
             padding: 40px;
@@ -125,13 +129,13 @@
             margin-top: 24px;
         }
 
-        &.bg-1{
-            background-image: url('./images/bg-1.png');
+        &:nth-child(2n){
+            & h3,
+            & p {
+                color: #FFF;
+            }
         }
 
-        &.bg-2 {
-            background-image: url('./images/bg-2.png');
-        }
 
         &.bg-1,
         &.bg-2{
