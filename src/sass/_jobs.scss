@@ -39,6 +39,10 @@
             overflow: hidden;
             display: flex;
 
+            transition-property: transform;
+            transition-duration: 500ms;
+            transition-delay: 0;
+
             @media (min-width: 768px) {
                 max-width: calc((100% - 22px) / 2);
                 padding-top: 20.834%;
