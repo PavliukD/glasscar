@@ -1,7 +1,7 @@
 export default function Language(){
     const swit = document.querySelector('.header--language-switch')
 
-    let buttons = swit.querySelectorAll('button')
+    let buttons = swit.querySelectorAll('a')
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
